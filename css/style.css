@@ -1,0 +1,496 @@
+/* Importing google fonts */
+/* general styling */
+/* header */
+/* body-main-intro section */
+/* a-link styling */
+/* font-styling */
+/* flex-styling */
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&family=Poppins:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Lexend+Deca:wght@300&family=Poppins:wght@300;500;700&display=swap');
+/*------------ General Styles ------------*/
+html{
+    box-sizing: border-box;
+    font-size: 10px;
+    line-height: 1;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: 'Lato', sans-serif;
+    /* margin: 0;
+    padding: 0; */
+}
+
+.landing-page {
+    height: 100vh;
+}
+
+p, h2, h3{
+    margin: 0;
+}
+
+
+/* ------------  Header ------------ */
+.header{
+    height: 7.3rem;
+    margin:0;
+    padding: 0;
+    border-width: 0.1rem;
+    border-color: #000000;
+    border-radius: 10rem;
+    border-style:solid;
+    width:100%;
+}
+
+.header .logo{
+    font-family: 'Lexend Deca', sans-serif;
+    padding-left: 3.4rem;
+}
+
+.header .logo-container{
+    border-right: #000000 0.1rem solid;
+    padding-right: 2rem;
+}
+
+
+.header .logo .A{
+    color: #FF5757 ;
+}
+
+.header .logo .M{
+    margin: 0 0 0 -0.75rem;
+    color: #FFDE59;
+}
+
+.header .header-rest .nav-container .menu{
+    list-style: none;
+    gap: 6rem;
+}
+  
+.header .header-rest .nav-container .menu .menu_item{
+    font-size: 2.8rem;
+    font-weight: 300;
+    color: #000000;
+}
+.header .header-rest .nav-container .menu .menu_item a:hover{
+    color: #FF5757;
+    font-weight:500;
+}
+
+.header .header-rest .mail{
+    padding-right: 3.4rem;
+}
+.header .header-rest .mail .email-logo img{
+    height: 100px;
+    width: 100px;
+}
+
+.header .nav-outer-container{
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.header .nav-desktop-tablet {
+    display:flex;
+}
+
+.header .nav-mobile {
+    display:none;
+    font-size: 4rem;
+    font-weight: 300;
+    color: #000000;
+}
+
+/* ------------  Body-main-intro_section ------------ */
+
+.intro_section {
+    padding:0 5rem;
+}
+.flex-container-row{
+    width: 100%;
+    column-gap: 20rem;
+}
+
+.flex-container-row .flex-item-intro{
+    row-gap: 1.5rem;
+}
+
+.flex-container-row .flex-item-intro .anjali_mahida {
+    font-size: 7.7rem;
+    font-weight: 400;
+    letter-spacing: 0.02rem;
+}
+
+.flex-container-row .flex-item-intro .anjali_mahida #anjali{
+    color:#FF5757;
+}
+
+
+.flex-container-row .flex-item-intro .anjali_mahida #mahida{
+    color:#FFDE59;
+}
+
+.flex-container-row .flex-item-intro .tagline{
+    font-size: 4rem;
+    font-weight: 300;
+    color: #000000;
+    letter-spacing: 0.02rem;
+}
+
+.flex-container-row .flex-item-intro .resume{
+    height:4rem;
+    width: 12.4rem;
+  background-image: linear-gradient(to right,#FF5757
+, #FFDE59);
+    color: rgb(255, 255, 255);
+    border-radius: 10rem;
+    border-width: 0px;
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 0.04rem;
+}
+
+.flex-container-row .flex-item-intro .resume:hover{
+    background-color: #ffffff;
+    font-weight: 300;
+}
+
+
+.flex-container-row .photo-section .behind-my-photo {
+    z-index: -1;
+    position: relative;
+    top:15rem;
+    left:-5rem;
+}
+
+.flex-container-row .photo-section .my_photo img{
+    position: relative;
+    width: 32rem;
+    height: 32rem;
+}
+
+.flex-container-row .photo-section .front-my-photo{
+    z-index: 1;
+    position: relative;
+    left:24rem;
+    bottom:7rem;
+}
+
+
+.circle {
+    border-radius: 50%;
+}
+
+.circle-small {
+    width: 9rem;
+    height: 9rem;
+}
+
+.circle-medium {
+    width: 17rem;
+    height: 17rem;
+}
+
+.circle-large {
+    width: 32rem;
+    height: 32rem;
+}
+
+.color-carrot{
+    background-color:#FFDE59 ;
+}
+
+.color-beige {
+    background-color:  #FF5757;
+}
+
+/* ------------  Body-main-about_section ------------ */
+
+.about_section{
+    width: 100%;
+    row-gap: 40px;
+}
+
+.about_section .about_me{
+    background-color: #FF5757;
+    width: 80%;
+    border-radius: 0 100px 0 0;
+    row-gap: 50px;
+    padding: 70px 0;
+}
+.about_section .about_me h2, .about_section .about_me p{
+    font-weight: 350;
+    font-size: 2.2em;
+    margin: 0 60px;
+}
+
+.about_section .about_me p{
+    color: #FFFFFF;
+}
+
+
+.about_section .my_skills_section{
+    background-color: #fdfdfd;
+    width: 80%;
+    align-self: flex-end;
+}
+
+.about_section .my_skills_section .skills{
+    width:100%;
+    column-gap: 60px;
+    padding: 30px 0px;
+}
+
+
+.skill_logo_and_name img{
+    height:200px;
+    width:200px;
+}
+
+
+h3{
+    font-size:2.2em;
+    color: rgb(0, 0, 0);
+}
+
+.color-white{
+    color:#000000;
+}
+
+
+/*------------ Footer Styling ------------*/
+.footer{
+    border-color: #000000;
+    border-radius: 100px;
+    height: 60px;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.footer .left_footer p{
+    padding-left: 20px;
+    color: #000000;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.footer .right_footer .social-media-handles{
+    padding-right: 30px;
+    column-gap: 30px;
+}
+
+.footer .right_footer .social-media-handles img{
+    height: 40px;
+    width: 40px;
+}
+
+
+/*------------ a link styling ------------*/
+a{
+   text-decoration: none;
+   color: #000000;
+}
+
+a:visited{
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+a:active{
+    text-decoration: none;
+}
+
+/* ------------ font-size styling ------------*/
+.font-size-4{
+    font-size: 4rem;
+}
+
+/* ------------ flex-styling ------------*/
+.flex {
+    display:flex;
+}
+
+.flex-row {
+    flex-direction:row;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.justify-content-space-evenly {
+    justify-content: space-evenly;
+}
+
+.justify-content-space-between{
+    justify-content: space-between;
+}
+
+.flex-grow{
+    flex-grow: 1;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.justify-content-space-around{
+    justify-content: space-around;
+}
+
+
+@media (max-width: 768px){
+    .header{
+        display: flex;
+        width: 100%;
+    }
+
+    .photo-section{   
+        padding-right: 20px;
+    }
+
+    .intro_section .flex-container-row{
+        display: flex;
+        flex-direction: column-reverse;
+    } 
+
+    /* .circle-small {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .circle-medium {
+        width: 9rem;
+        height: 9rem;
+    }
+
+    .circle-large {
+        width: 20rem;
+        height: 20rem;
+    }
+   
+    .flex-container-row .photo-section .behind-my-photo {
+        top:7rem;
+        left:-2rem;
+    }
+
+    .flex-container-row .photo-section .my_photo img{
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .flex-container-row .photo-section .front-my-photo{
+        left:15rem;
+        bottom:4.5rem;
+    } */
+
+    html{
+        font-size: 6px;
+    }
+
+    .about_section .about_me,  .about_section .my_skills_section{
+        border-radius: 0;
+        width: 100%;
+    }
+    
+    .about_section .my_skills_section .skills {
+        width: 100%;
+        column-gap: 25rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 5rem;
+    }
+
+    .contact_section {
+        padding-top: 12rem;
+        padding-bottom: 10rem;
+    }
+
+    .contact_me{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .name, .name .form_fields, .email, .email .form_fields, .description, .description .form_fields {
+    width: 500px;
+    }
+
+}
+
+@media (max-width: 320px){ 
+
+    .MobileMenuItemsVisible .menu {
+        flex-direction: column;
+    }
+    
+    .header .nav-mobile {
+        display:flex;
+        flex-grow: 1;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header{
+        border:0;
+        width:100%;
+    }
+    .MobileMenuItemsVisible {
+        display:flex;
+    }
+
+    .header .nav-desktop-tablet {
+        display:none;
+    }
+
+    .header .nav-outer-container{
+        flex-grow: 1;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .header .nav-outer-container ul{
+        padding-inline-start: 0;
+     }
+
+     .flex-container-row .flex-item-intro .resume{
+        height:5rem;
+        width: 17rem;
+        background-color: #D3756B;
+        color: black;
+        border-radius: 10rem;
+        font-size: 2.5rem;
+        font-weight: 600;
+        letter-spacing: 0.04rem;
+    }
+
+    .about_section .about_me h2, .about_section .about_me p {
+        font-size: 2.9rem;
+    }
+
+    .contact_me .contact_me_photo{
+        display: none;
+    }
+
+    .name, .name .form_fields, .email, .email .form_fields, .description, .description .form_fields {
+        width: 40rem;
+        }
+
+    .footer{
+        border: 0;
+        flex-direction: column-reverse;
+    }
+    
+    .footer .left_footer p{
+        font-size: 2.3rem;
+    }
+    
+}
